@@ -190,6 +190,7 @@ summary::-webkit-details-marker{display:none}
 .tools-copy>p:last-child{max-width:640px;margin:26px 0 0;font-size:1.16rem;line-height:1.95}
 .tool-cards{display:grid;grid-template-columns:1fr 1fr;gap:13px}
 .tool-cards article{min-height:164px;padding:26px;display:flex;align-items:flex-start;gap:18px;background:var(--paper);border:1px solid #d6dcd3;border-radius:20px 20px 5px 20px;transition:transform .18s,box-shadow .18s}
+.tool-cards article>div{width:100%}
 .tool-cards article:hover{transform:translateY(-3px);box-shadow:0 12px 26px #2a53451a}
 .tool-logo,.tool-mark{display:grid;place-items:center;flex:0 0 52px;width:52px;height:52px}
 .tool-logo{background:#fff;border:1px solid #d7ddd5;border-radius:15px;box-shadow:0 4px 12px #18545c12}
@@ -219,6 +220,8 @@ summary::-webkit-details-marker{display:none}
 .button-class{width:100%;background:var(--forest);color:#fff}
 .button-class:hover{background:var(--forest-dark)}
 .pending-action{cursor:default;background:#fff1f1!important;color:#c62828!important;border:2px solid #c62828!important;box-shadow:none!important;pointer-events:none}.pending-text{color:#c62828}
+.materials{width:min(calc(100% - 48px),1180px);margin:0 auto 90px;padding:88px 70px;background:#eaf2ef;border-radius:38px}.material-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:42px}.material-card{min-height:178px;padding:29px;background:var(--paper);border:2px solid var(--forest);border-radius:22px 22px 6px 22px}.material-card small,.material-card strong,.material-card>span{display:block}.material-card small{color:var(--muted);font-size:.76rem;font-weight:800;letter-spacing:.05em}.material-card strong{margin:8px 0 11px;font-family:var(--display);font-size:1.25rem}.material-link{transition:transform .18s,box-shadow .18s}.material-link>span{color:var(--forest);font-weight:900}.material-link:hover{transform:translateY(-3px);box-shadow:0 12px 26px #2a53451f}.material-pending{border-color:#c62828}.material-pending>span{color:#c62828;font-weight:900}
+@media(max-width:700px){.materials{width:calc(100% - 24px);padding:62px 20px;border-radius:28px}.material-grid{grid-template-columns:1fr}.material-card{min-height:150px}}
 .schedule-note{margin:15px 2px 0;color:#78827d;font-size:.76rem}
 
 .outcomes{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start;background:var(--forest);color:#fff}
